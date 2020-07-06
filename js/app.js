@@ -2,7 +2,8 @@ const boton = document.getElementById('btn-send');
 // const taskContainer = document.querySelector('.tasks');
 const taskContainer = document.getElementById('task-list');
 
-taskContainer.addEventListener('click', deleteTask)
+taskContainer.addEventListener('click', deleteTask);
+taskContainer.addEventListener('touchstart', deleteTask);
 document.addEventListener('DOMContentLoaded', checkingLocalStorage);
 boton.addEventListener('click', (e) => {
     e.preventDefault();
